@@ -11,23 +11,32 @@ def check_guess(guess):
     Args:
         guess (str): one letter of alphabet
     """
-    if guess.isalpha and len(guess) == 1:
-        print("Valid guess")
+    
+    guess = guess.lower()
+    
+    if guess in word:
+                print(f"Good guess! {guess} is in the word.")   
     else:
-        guess = input("Invalid letter. Please, enter a single alphabetical character: ")
+        print(f"Sorry, {guess} is not in the word. Try again")
+    
     
 def ask_for_input():
     """This will run the hangman game by asking for
-    an input. Inpt a single alphabetical
+    an input. Input a single alphabetical
     """
-    while True:
-        guess = input("Guess a letter: ").lower()
+    guess = input("Guess a letter: ").lower()
+      
+    if guess.isalpha and len(guess) == 1:
+        print("Valid guess")
+        
         check_guess(guess)
-        
-        if guess in word:
-                print(f"Good guess! {guess} is in the word.")   
-        else:
-            print(f"Sorry, {guess} is not in the word. Try again")
-        
+    else:
+        print("Invalid letter. Please, enter a single alphabetical character: ")
     
-ask_for_input()
+        
+while True:
+    ask_for_input()
+    
+    
+    
+    
