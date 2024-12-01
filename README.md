@@ -1,5 +1,19 @@
 # *<u>Hangman Project</u>*
 
+## Table of Contents
+1. [Description](#description)
+2. [Skills I have learnt](#skills-i-have-learnt)
+3. [Python files: ](#python-files)
+
+    - 3.1 - [milestone2.py](#milestone2py)
+    - 3.2 - [milestone3.py](#milestone3py)
+
+    - 3.3 - [milestone4.py](#milestone4py)
+
+4. [Installation Instructions]()
+5. [Usage Instructions]()
+6. [File Structure]()
+
 ### Description
 The aim of this project is to create an interactive Hangman game. The final product uses 'Object oriented programming' (OOP) to simulate an interactive hangman game experience.
 
@@ -27,3 +41,4 @@ In this file the functions are made to modularise the code for better readabilit
 This milestone converts functions into methods with classes. A new class is made called 'Hangman', once initialised , all game methods are executed from the Hangman class.
 
 This milestone additionally tracks player guesses and punishes incorrect guesses.
+
